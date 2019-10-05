@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="CountThrees" default="runCount3s">
+    
+    <target name="Count3s">
+        <javac srcdir="." includeantruntime="true" includes="CountThrees.java" destdir=".">
+        </javac>
+    </target>
+    
+    <target name="runCount3s" depends="Count3s">
+        <java classname="CountThrees" fork="true"/>
+    </target>
+
+</project>
